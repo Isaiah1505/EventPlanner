@@ -3,9 +3,9 @@
     public class Calendar
     {
         // PK
-        public int Id { get; set; }
+        public int CalenderId { get; set; }
 
-        public string? DayName { get; set; }
+        public string? DayOfWeek { get; set; }
 
         public int Day { get; set; }
 

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using EventPlanner.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace EventPlanner.Data
@@ -8,6 +9,18 @@ namespace EventPlanner.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
+
+        }
+        public DbSet<Category> Categories { get; 
+            set;
+        }
+
+        public DbSet<Event> Events { get; 
+            set; 
+        }
+
+        public DbSet<Calendar> Calendars { get; 
+            set; 
         }
     }
 }

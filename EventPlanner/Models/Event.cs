@@ -4,6 +4,7 @@ namespace EventPlanner.Models
 {
     public class Event
     {
+        // PK
         public int EventId { get; set; }
 
         [Required]
@@ -20,6 +21,10 @@ namespace EventPlanner.Models
         // FK
 
         public int CategoryId { get; set; }
+
+        // Parent reference
+
+        public Category? Category { get; set; }
 
 
     }

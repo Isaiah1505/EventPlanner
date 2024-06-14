@@ -16,5 +16,9 @@ namespace EventPlanner.Models
 
         [MaxLength(100)]
         public string? Description { get; set; }
+
+        // child reference
+
+        public List<Event>? Events { get; set; }
     }
 }
