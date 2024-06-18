@@ -1,9 +1,11 @@
-﻿namespace EventPlanner.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace EventPlanner.Models
 {
     public class Calendar
     {
         // PK
-        public int CalenderId { get; set; }
+       [Key] public int CalenderId { get; set; }
 
         public string? DayOfWeek { get; set; }
 
