@@ -19,5 +19,6 @@ An application that allows the user to book events, meetings, vacations and sche
 This application will act as an online calendar that can add events, edit the existing events it comes with or that were made by the user, or delete said events if need be. This will help users plan out their days, weeks, months or even years in advance, giving users access to a useful time management tool.
 
 ### Private Github Repo Link:
-https://github.com/MiguelAndr05/EventPlanner
-We had to remake a new Repo Due to issues out of our control
+https://github.com/MiguelAndr05/EventPlanner <br>
+We had to remake a new Repo Due to issues out of our control <br> 
+https://timelessevents.azurewebsites.net
