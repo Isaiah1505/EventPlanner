@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using EventPlanner.Data;
 using EventPlanner.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace EventPlanner.Controllers
 {
+    [Authorize]
     public class EventsController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -19,14 +21,15 @@ namespace EventPlanner.Controllers
         {
             _context = context;
         }
-
-        // GET: Events
+        [AllowAnonymous]
+        // GET: Events 
         public async Task<IActionResult> Index()
         {
             return View(await _context.Events.ToListAsync());
         }
 
         // GET: Events/Details/5
+        [AllowAnonymous]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
