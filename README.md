@@ -23,4 +23,4 @@ https://github.com/MiguelAndr05/EventPlanner <br>
 We had to remake a new Repo Due to issues out of our control <br> 
 https://timelessevents.azurewebsites.net
 
-![unnamed](https://github.com/user-attachments/assets/95527963-2513-45e7-b3c2-e945676fdaab)
+
