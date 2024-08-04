@@ -6,6 +6,7 @@
     ViewData["Title"] = "Timeless Events";
 }
 <div class="mainWrapper">
+
 <div class="text-center">
     <h1 class="display-4">@ViewData["Title"]</h1>
     <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Raleway&pause=1000&color=FFA000&center=true&width=435&lines=You+Mark+It%2C+We+Save+It" alt="Typing SVG" /></a>
@@ -15,7 +16,10 @@
 <div class="mainBodyText">
     <p>We have created this site to help users build and plan there events</p>
     <p>The data this site will manage UserId, Emails, Events Created, Descriptions and much more.</p>
+   
+       
 </div>
+
 </div>
 <style>
     h1 {
@@ -23,19 +27,23 @@
         text-align: center;
         color: #00BCD4;
     }
-    .text-center p {
-        color: #212121;
-        font-size: 20px;
-    }
+   
 
-    .mainBodyText {
+    .mainBodyText p{
         text-align: center;
+        color: #212121;
     }
     .mainWrapper {
+        width: 1320px;
+        
+        height: 100%;
         background-image: url('/images/HomePhotoMain.jpg');
         background-size: cover;
-        background-repeat: no-repeat;
+        background-repeat: repeat;
         background-attachment: fixed;
+    }
+    .footer p {
+       color: white;
     }
     
 </style>
