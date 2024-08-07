@@ -45,7 +45,7 @@
                 @Html.DisplayFor(modelItem => item.Descrption)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Colour)
+                <div class="colorBox" style="background-color: @Html.DisplayFor(modelItem => item.Colour)"></div>
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.CategoryId)
@@ -61,5 +61,6 @@
 }
     </tbody>
 </table>
+
 
 

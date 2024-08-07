@@ -39,7 +39,18 @@ h1, h2, h3, h4, h5, h6 {
     
 }
 
-    /* Ensure all text within the footer is white */
-    .footer p, small, .container {
-        color: #ffffff;
-    }
+/* Ensure all text within the footer is white */
+.footer p, small, .container {
+    color: #ffffff;
+}
+
+/* Makes all inputs labels (ie. textfields) have black text so they are readable */
+.form-label{
+    color: #000000;
+}
+
+.colorBox {
+    border: 3px solid;
+    width: 20px;
+    height: 20px;
+}
