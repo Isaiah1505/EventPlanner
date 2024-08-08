@@ -28,15 +28,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer {
-    background-color: #333333; /* Dark gray background for footer */
-    color: #ffffff; /* White text color for footer */
-    text-align: center;
-    padding: 20px; /* Add padding to the footer */
     position: absolute;
     bottom: 0;
     width: 100%;
-    line-height: 20px; /* Vertically center the text */
-    
+    height: 2.5rem;
+    background-color: #212121;
+    text-align: center;
+   line-height: 17px;
+   
 }
 
 /* Ensure all text within the footer is white */
@@ -53,4 +52,11 @@ h1, h2, h3, h4, h5, h6 {
     border: 3px solid;
     width: 20px;
     height: 20px;
+}
+
+
+
+
+.nav-link a:hover {
+    color: #258cfb;
 }

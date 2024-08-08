@@ -15,38 +15,88 @@
 </div>
 
 <div class="mainBodyText">
-    <p>We have created this site to help users build and plan there events</p>
+    <p>We have created this site to help users build and plan their events</p>
     <p>The data this site will manage UserId, Emails, Events Created, Descriptions and much more.</p>
     <p>Click here to view the events, or To create one yourself</p>
+       
 </div>
 <div class="text-center">
-    <a class="btn btn-primary" asp-area="" asp-controller="Events" asp-action="Index">Event List</a>
+    <a class="mainPgbtn" asp-area="" asp-controller="Events" asp-action="Index">Event List</a>
 </div>
 </div>
 
     
 <style>
+
+   
     h1 {
         font-family: 'Roboto Slab', serif;
+        font-size: 50px;
         text-align: center;
         color: #00BCD4;
     }
 
 
     .mainBodyText p{
+        font-family: 'Raleway', sans-serif;
+        padding-top: 8px;
+        font-size: 18px;
         text-align: center;
             color: #212121
     }
+
     body {
         height: 100%;
-        background-image: url('/images/HomePhotoMain.jpg');
+        background-image: url('/images/take22.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         
     }
-    .footer {
-        border-top: 1px solid #00BCD4;
-       color: white;
+    
+
+    .mainPgbtn{
+        color: white;
+        background-color: #00BCD4;
+        border: none;
+        font-size: 30px;
+        border-radius: 5px;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+
     }
+
+    .mainPgbtn:hover {
+        text-decoration: none;
+        color: white;
+        background-color: ;
+        transition: 300ms;
+        font-size: 40px;
+         
+        animation: ease-in-out;
+
+    }
+    .mainPgbtn:active, .mainPgbtn::after {
+            background-color: #FFA000;
+    }
+
+    
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 2.5rem;
+        text-align: center;
+        line-height: 17px;
+        opacity: 0.7;
+        background-color: #fff
+        
+    }
+
+        .footer p, small, .container {
+            color: black;
+        }
+
+        
     
 </style>
