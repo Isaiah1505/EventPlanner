@@ -1,7 +1,183 @@
 ﻿@{
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" rel="stylesheet">
+
     ViewData["Title"] = "Index";
 }
 
-<h2>Index</h2>
+<h2 style="color:#FFA000">About Us </h2>
 
-<p>Hello from our View Template!</p>
+<body>
+    <div class="container2">
+        <header>
+            <h1>Timeless Events</h1>
+            <p class="tagline">You mark it, we save it.</p>
+        </header>
+
+        <section class="about-us">
+            <h2>About Us</h2>
+            <h3>Welcome to Timeless Events!</h3>
+            <p>
+                At Timeless Events, we believe that every special moment deserves to be remembered and celebrated. Whether it’s a wedding, a birthday, a corporate event, or any other milestone, we’re here to help you build and plan your events with ease.
+            </p>
+            <p>
+                <strong>You mark it, we save it.</strong>
+            </p>
+            <p>
+                Our mission is to provide you with a seamless and efficient platform where you can create, manage, and cherish your events. We understand how important these moments are, and our goal is to make sure that your event planning experience is as enjoyable as the event itself.
+            </p>
+        </section>
+
+        <section class="what-we-do">
+            <h2>What We Do</h2>
+            <p>
+                We’ve designed Timeless Events to be your go-to tool for organizing your events. From the initial planning stages to the day of the event, we’re here to help you stay on top of every detail. Our platform allows you to manage everything in one place, including:
+            </p>
+            <ul>
+                <li><strong>User Information:</strong> Safely store your User ID and email information.</li>
+                <li><strong>Event Creation:</strong> Easily create new events and customize every aspect, from the date and time to the guest list.</li>
+                <li><strong>Descriptions and More:</strong> Add detailed descriptions to each event, ensuring nothing is overlooked.</li>
+            </ul>
+        </section>
+
+        <section class="get-started">
+            <h2>Get Started</h2>
+            <p>
+                Ready to dive in? <a asp-area="" asp-controller="Events" asp-action="Index"> Click here</a> to view upcoming events or <a asp-area="" asp-controller="Events" asp-action="Create">click here</a> to create one yourself! At Timeless Events, we’re committed to helping you make your event timeless.
+            </p>
+        </section>
+    </div>
+</body>
+
+
+
+  <style>
+    body {
+        font-family: Roboto;
+        background-image: url('/images/lined-paper-background-16f0avgoxi7t0rc9.png');
+        margin: 0;
+        padding: 0;
+    }
+
+    .container2 {
+        width: 80%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        
+    }
+
+   
+
+    
+
+    .about-us, .what-we-do, .get-started {
+        margin-bottom: 30px;
+        
+    }
+    .about-us h3, .about-us strong {
+            color: #FFA000;
+    }
+        .about-us h2, .what-we-do h2, .get-started h2 {
+            font-size: 28px;
+            color: #00BCD4;
+            margin-bottom: 20px;
+        }
+
+    p {
+        line-height: 1.6;
+        margin-bottom: 20px;
+        color: black;
+}
+
+.container2 {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 50px;
+    color: #00BCD4;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 30px;
+    color: #FFA000;
+}
+
+.about-us, .what-we-do, .get-started {
+    margin-bottom: 30px;
+}
+
+.about-us h2, .what-we-do h2, .get-started h2 {
+    font-size: 28px;
+    color: #00BCD4;
+    margin-bottom: 20px;
+   
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: black;
+}
+
+    .what-we-do ul {
+    list-style-type: disc;
+    padding-left: 20px;
+        color: #FFA000;
+        font-size: 20px;
+}
+
+    .what-we-do ul li {
+    margin-bottom: 10px;
+    color: black;
+}
+
+    .what-we-do li strong {
+color: #FFA000;
+}
+
+.get-started a {
+    color: #FFA000;
+    text-decoration: none;
+}
+
+.get-started a:hover {
+    text-decoration: underline;
+}
+
+    
+
+
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 2.5rem;
+        text-align: center;
+        line-height: 17px;
+        opacity: 0.8;
+        background-color: #fff
+    }
+
+        .footer p, small, .container {
+            color: #000;
+        }
+        /* Ensure all text within the footer is white */
+    
+
+  </style>
