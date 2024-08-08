@@ -133,11 +133,6 @@ namespace EventPlanner.Controllers
                 return NotFound();
             }
 
-            if (category.CategoryId == 1) 
-            {
-                return RedirectToAction(nameof(Index));
-            }
-
             return View(category);
         }
 
