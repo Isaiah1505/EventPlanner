@@ -19,6 +19,7 @@ html {
 }
 
 body {
+    font-family: Roboto;
     margin: 0;
     background-color: #212121;
     color: #ffffff;
@@ -45,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Makes all inputs labels (ie. textfields) have black text so they are readable */
-.form-label{
+.form-label {
     color: #000000;
 }
 

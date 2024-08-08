@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace EventPlanner.Models
 {
@@ -19,7 +20,7 @@ namespace EventPlanner.Models
         public string Colour { get; set; }
 
         // FK
-
+        [DisplayName("Category ID")]
         public int CategoryId { get; set; }
 
         // Parent reference
