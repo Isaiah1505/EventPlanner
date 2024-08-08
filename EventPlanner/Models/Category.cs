@@ -5,6 +5,7 @@ namespace EventPlanner.Models
     public class Category
     {
         // PK
+        
         public int CategoryId { get; set; }
 
         [Required]
