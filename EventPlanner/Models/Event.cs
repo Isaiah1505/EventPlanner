@@ -1,10 +1,13 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace EventPlanner.Models
 {
     public class Event
     {
         // PK
+        [DisplayName("Category ID")]
+
         public int EventId { get; set; }
 
         [Required]
