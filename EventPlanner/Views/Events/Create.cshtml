@@ -8,6 +8,7 @@
 
 <h4>Event</h4>
 <hr />
+<div class="detailscons">
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
@@ -48,6 +49,8 @@
     <a asp-action="Index">Back to List</a>
 </div>
 
+</div>  
+
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
@@ -63,18 +66,6 @@
         color: white;
     }
 
-
-    a {
-        padding-top: 15px;
-        text-decoration: none;
-        border: 1px solid;
-        border-radius: 20px;
-        padding: 10px;
-        color: white;
-    }
-
-        a:hover {
-            color: #00BCD4;
-        }
+    
 
 </style>
