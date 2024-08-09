@@ -6,7 +6,7 @@
 
 <h1>Details</h1>
 
-<div>
+<div class="detailscons">
     <h4>Event</h4>
     <hr />
     <dl class="row">
@@ -42,10 +42,11 @@
             @Html.DisplayFor(model => model.CategoryId)
         </dd>
     </dl>
-</div>
+
 <div>
     <a asp-action="Edit" asp-route-id="@Model?.EventId">Edit</a> |
     <a asp-action="Index">Back to List</a>
+</div>
 </div>
 
 <style>
@@ -60,13 +61,16 @@
     }
 
 
-    a {
-        border-radius: 20px;
-        color: #fff;
+    .detailscons a {
+        padding-top: 15px;
         text-decoration: none;
+        border: 1px solid;
+        border-radius: 20px;
+        padding: 10px;
+        color: white;
     }
 
-        a:hover {
+        .detailscons a:hover {
             color: #00BCD4;
         }
 

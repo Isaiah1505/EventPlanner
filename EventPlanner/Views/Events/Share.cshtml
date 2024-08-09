@@ -6,11 +6,14 @@
 
 <h1>Share</h1>
 
-<div>
+<div class="detailscons">
     <h4>Event (Copy and Share)</h4>
     <p>Send To A Friend</p>
 
+
     <hr />
+
+    <div class="container5">
     <dl class="row">
         
         <dd class="col-sm-10">
@@ -25,42 +28,59 @@
             @Html.DisplayFor(model => model.Descrption)
         </dd>
         
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Colour)
-        </dd>
-        
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.CategoryId)
-        </dd>
+
     </dl>
 </div>
+
 <div>
     <a asp-action="Edit" asp-route-id="@Model?.EventId">Edit</a> |
     <a asp-action="Index">Back to List</a> |
-    <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">Email Someone</a>
+    <a class="emailBtn" href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank">Email Someone</a>
 
-
+</div>
 
 <style>
 
-
+        .container5 {
+            background-color: #fff;
+        }
     body {
         background-color: #37474F;
     }
 
-    h1, p, tr, td, table, li, nav, ul, dl, span, .form-group, label, input {
-        color: white;
+     tr, td, table, li, nav, ul,  span, .form-group, label, input {
+        color: black;
     }
 
 
-    a {
-        border-radius: 20px;
-        color: #fff;
-        text-decoration: none;
-    }
-
-        a:hover {
-            color: #00BCD4;
+        .detailscons a {
+            padding-top: 15px;
+            text-decoration: none;
+            border: 1px solid;
+            border-radius: 20px;
+            padding: 10px;
+            color: white;
         }
+
+            .detailscons a:hover {
+                color: #00BCD4;
+            }
+        
+
+        .emailBtn{
+            padding: 10px;
+            text-size: 20px;
+            border: 10px;
+            background-color: #00BCD4;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .emailBtn:hover {
+            color: #fff;
+                background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff 51%, #ff6e7f 100%)
+        }
+        
+        
 
 </style>
