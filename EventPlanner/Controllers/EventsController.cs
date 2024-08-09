@@ -48,6 +48,24 @@ namespace EventPlanner.Controllers
             return View(@event);
         }
 
+        //GET : Events/Share
+        public async Task<IActionResult> Share(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var @event = await _context.Events
+                .FirstOrDefaultAsync(m => m.EventId == id);
+            if (@event == null)
+            {
+                return NotFound();
+            }
+
+            return View(@event);
+        }
+
         // GET: Events/Create
         public IActionResult Create()
         {
@@ -161,9 +179,6 @@ namespace EventPlanner.Controllers
             
         }
 
-        public IActionResult Share()
-        {
-            return View();
-        }
+        
     }
 }
