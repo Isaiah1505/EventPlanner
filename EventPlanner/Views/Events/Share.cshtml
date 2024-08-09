@@ -1,0 +1,73 @@
+﻿@model EventPlanner.Models.Event
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Event</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Descrption)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Descrption)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Colour)
+        </dt>
+        <dd class="col-sm-10">
+            <div class="colorBox" style="background-color: @Html.DisplayFor(model => model.Colour)"></div>
+            @Html.DisplayFor(model => model.Colour)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CategoryId)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CategoryId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.EventId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
+
+<style>
+
+
+    body {
+        background-color: #37474F;
+    }
+
+    h1, p, tr, td, table, li, nav, ul, dl, span, .form-group, label, input {
+        color: white;
+    }
+
+
+    a {
+        border-radius: 20px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+        a:hover {
+            color: #00BCD4;
+        }
+
+</style>

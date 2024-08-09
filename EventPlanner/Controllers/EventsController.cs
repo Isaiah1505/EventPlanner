@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using EventPlanner.Data;
 using EventPlanner.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.Identity.Client;
 
 namespace EventPlanner.Controllers
 {
@@ -156,6 +157,13 @@ namespace EventPlanner.Controllers
         private bool EventExists(int id)
         {
             return _context.Events.Any(e => e.EventId == id);
+
+            
+        }
+
+        public IActionResult Share()
+        {
+            return View();
         }
     }
 }
