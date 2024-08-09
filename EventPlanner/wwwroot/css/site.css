@@ -23,7 +23,7 @@ body {
     font-family: Roboto;
     margin: 0;
     background-color: #212121;
-    color: #ffffff;
+    color: #fff;
 }
 h1, h2, h3, h4, h5, h6 {
     color: #ffffff; /* White text color for headings */
@@ -55,11 +55,35 @@ h1, h2, h3, h4, h5, h6 {
     width: 20px;
     height: 20px;
 }
-
-
-a:hover {
-    color: blueviolet;
+.navbar-brand {
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    text-align: center;
+    color: #00BCD4;
+    text-shadow: 2px 2px 10px #000000;
+    text-decoration: none;
 }
-.nav-item a:hover {
-    color:aquamarine;
+
+header {
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 2px solid #FFA000;
+    border-radius: 15em;
+    background-image: linear-gradient( 103.3deg, rgba(252,225,208,1) 30%, rgba(255,173,214,1) 55.7%, rgba(162,186,245,1) 81.8% );
 }
+
+.nav-item a {
+    color: #fff;
+    font-size: 1.2em;
+    border: solid none;
+    border-radius: 2em;
+}
+
+    .nav-item a:hover {
+        background-image: linear-gradient(to right, #24C6DC 0%, #514A9D 51%, #24C6DC 100%);
+        justify-content: space-between;
+        font-size: 1.5em;
+        transition: 300ms;
+        color: #FFF
+    }

@@ -3,14 +3,14 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Timeless Events</title>
+    <title style="font-size: 40px">@ViewData["Title"] - Timeless Events</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="false" />
     <link rel="stylesheet" href="~/EventPlanner.styles.css" asp-append-version="true" />
 </head>
 <body>  
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm bg-dark bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm ">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Timeless Events</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -37,10 +37,11 @@
                         
 
                     </ul
+
                     <partial name="_LoginPartial" />
                 </div>
             </div>
-        </nav>
+        </nav> 
     </header>
     <div class="container">
         <main role="main" class="pb-3">
