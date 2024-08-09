@@ -2,7 +2,10 @@
 @inject SignInManager<IdentityUser> SignInManager
 @inject UserManager<IdentityUser> UserManager
 
+
+<div class="eventContainer"> 
 <ul class="navbar-nav">
+
     @if (SignInManager.IsSignedIn(User))
     {
         <li class="nav-item">
@@ -24,12 +27,14 @@
         </li>
     }
 </ul>
+</div>
 
 <style>
     h1, p, tr, td, table, li, nav, ul {
         color: white;
     }
-
+    
+   
     button {
         border-radius: 20px;
         color: #fff;

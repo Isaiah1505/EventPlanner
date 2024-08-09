@@ -25,7 +25,7 @@ body {
     background-color: #212121;
     color: #fff;
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
     color: #ffffff; /* White text color for headings */
 }
 
@@ -46,10 +46,6 @@ h1, h2, h3, h4, h5, h6 {
         color: black;
     }
 
-/* Makes all inputs labels (ie. textfields) have black text so they are readable */
-.form-label{
-    color: #000000;
-}
 
 .colorBox {
     border: 3px solid;
