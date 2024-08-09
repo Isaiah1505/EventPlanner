@@ -32,18 +32,19 @@ h1, h2, h3, h4, h5, h6 {
 .footer {
     position: absolute;
     bottom: 0;
-    width: 100%;
+    left: 32%;
+    width: 35%;
     height: 2.5rem;
-    background-color: #212121;
     text-align: center;
     line-height: 17px;
-   
+    opacity: 0.7;
+    background-color: #fff;
+    border-radius: 15em;
 }
 
-/* Ensure all text within the footer is white */
-.footer p, small, .container {
-    color: #ffffff;
-}
+    .footer p, small, .container {
+        color: black;
+    }
 
 /* Makes all inputs labels (ie. textfields) have black text so they are readable */
 .form-label{

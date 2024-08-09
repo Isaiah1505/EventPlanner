@@ -3,12 +3,12 @@
 @{
     ViewData["Title"] = "Categories";
 }
-
+<div class="eventContainer">
 <h1>Categories</h1>
 
 <p>
     @if (User.Identity.IsAuthenticated) {
-        <a asp-action="Create">Create New</a>
+        <a class="createBTn"asp-action="Create">Create New</a>
     }
 </p>
 <table class="table">
@@ -57,7 +57,7 @@
 
             </td>
         </tr>
-}
+}</div>
     </tbody>
 </table>
 
@@ -65,4 +65,41 @@
     h1, p, tr, td, table {
         color: white;
     }
+
+    <style >
+    .eventTitle {
+        font-size: 40px;
+        color: #00BCD4;
+    }
+
+    body {
+        background-image: url('/images/editednomiddle.jpg');
+    }
+
+    .eventContainer {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #333;
+        opacity: 0.95;
+        border-radius: 15px;
+    }
+
+    .createBTn {
+        padding-top: 15px;
+        text-decoration: none;
+        border: 1px solid;
+        border-radius: 20px;
+        padding: 10px;
+        color: white;
+        font-size: 20px;
+    }
+
+        .createBTn:hover {
+            border: none;
+            color: white;
+            transition: 300ms;
+            font-size: 30px;
+            background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff 51%, #ff6e7f 100%)
+        }
+</style>
 </style>

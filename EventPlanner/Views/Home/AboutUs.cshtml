@@ -8,8 +8,6 @@
     ViewData["Title"] = "Index";
 }
 
-<h2 style="color:#FFA000">About Us </h2>
-
 <body>
     <div class="container2">
         <header>
@@ -17,6 +15,7 @@
             <p class="tagline">You mark it, we save it.</p>
         </header>
 
+        <div class="container32">
         <section class="about-us">
             <h2>About Us</h2>
             <h3>Welcome to Timeless Events!</h3>
@@ -49,6 +48,7 @@
                 Ready to dive in? <a asp-area="" asp-controller="Events" asp-action="Index"> Click here</a> to view upcoming events or <a asp-area="" asp-controller="Events" asp-action="Create">click here</a> to create one yourself! At Timeless Events, we’re committed to helping you make your event timeless.
             </p>
         </section>
+        </div>
     </div>
 </body>
 
@@ -57,9 +57,11 @@
   <style>
     body {
         font-family: Roboto;
-        background-image: url('/images/lined-paper-background-16f0avgoxi7t0rc9.png');
+        
+        background-image: url('/images/editednomiddle.jpg');
         margin: 0;
         padding: 0;
+        background
     }
 
     .container2 {
@@ -70,7 +72,12 @@
         
     }
 
-   
+   .container32 {
+        padding: 10px;
+        background-color: #333;
+        opacity: 0.95;
+        border-radius: 15px;
+   }
 
     
 
@@ -90,7 +97,7 @@
     p {
         line-height: 1.6;
         margin-bottom: 20px;
-        color: black;
+        color: #fff;
 }
 
 .container2 {
@@ -131,7 +138,7 @@ p {
     font-size: 20px;
     line-height: 1.6;
     margin-bottom: 20px;
-    color: black;
+    color: #fff;
 }
 
     .what-we-do ul {
@@ -143,7 +150,7 @@ p {
 
     .what-we-do ul li {
     margin-bottom: 10px;
-    color: black;
+    color: #fff;
 }
 
     .what-we-do li strong {
@@ -166,12 +173,14 @@ color: #FFA000;
     .footer {
         position: absolute;
         bottom: 0;
-        width: 100%;
+        left:32%;
+        width: 35%;
         height: 2.5rem;
         text-align: center;
         line-height: 17px;
         opacity: 0.7;
-        background-color: #fff
+        background-color: #fff;
+        border-radius: 15em;
     }
 
         .footer p, small, .container {
